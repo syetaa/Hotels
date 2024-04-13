@@ -1,0 +1,30 @@
+.textmain{
+    padding: 0 110px;
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    display: flex;
+    align-items: center;    
+}
+.links{
+    display: flex;
+    align-items: center;
+    column-gap: 27px;
+}
+.logo{
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--text-color1);
+}
+.links > a{
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color1);
+}
+.links > a:hover{
+    transform: scale(1.05);
+    color: var(--link-hover-color);
+}

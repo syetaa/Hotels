@@ -1,0 +1,79 @@
+.cont{
+    
+    padding: 45px 150px;
+}
+.cont2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px;
+    
+}
+.text1{
+    font-weight: 700;
+    color: var(--text-color1);
+}
+.text2{
+    color: var(--text-color3);
+}
+.text3{
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    color: var(--text-color1);
+}
+.text4{
+    display: flex;
+    column-gap: 80px;
+    color: var(--text-primary-color);
+}
+.price{
+    color: var(--text-primary-color);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+   border-radius: 0 0 15px 15px;
+    user-select: none;
+   
+    background: #fff;
+}
+.item{
+    width: 199px;
+    padding-bottom: 40px;
+}
+.img1{
+    height: 159px;
+}
+
+.rating{
+    padding: 0 13px;
+    border-radius: 0;
+    height: 22px;
+    background: #212121;
+    display: flex;
+    column-gap: 13px;
+    align-items: center;
+    
+}
+.rating_text1{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color4);
+}
+.rating_text2{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color5);
+}
+.rating_text3 svg:hover{
+    fill: #ff0000;         /* !!! */
+}
+.prev_btn,.next_btn{
+    padding: 8px 8px;
+    background: var(--primary-color);
+    border-radius: 100%;
+    user-select: none;  
+}

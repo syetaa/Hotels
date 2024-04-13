@@ -1,0 +1,19 @@
+.textmain{
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+    padding: 0 100px;
+}
+.icon span{
+    padding: 10px 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    border-radius: 100%;
+}
+.text1{
+    color: var(--text-color1);
+    font-size: 18px;
+    font-weight: 600;
+}
