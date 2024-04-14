@@ -53,9 +53,7 @@ function Carousel() {
                     <div className={styles.rating_text2}>
                         146 отзывов
                     </div>
-                    {/* <div className={styles.rating_text3}>
-                        <FiHeart color="#ff0000" size={14}/>
-                    </div> */}
+                    
                 </div>
             </div>
             <div className={styles.cont2}>
@@ -82,6 +80,10 @@ function Carousel() {
             </div>
           </div>
         </div>,
+
+
+
+
 
        <div key={2} className={styles.item}>
            <div className={styles.card}>
