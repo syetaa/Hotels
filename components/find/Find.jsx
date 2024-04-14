@@ -1,6 +1,7 @@
 
 import styles from "./Find.module.css"
 
+import { IoSearch } from "react-icons/io5";
 import { BsFillLightningChargeFill } from "react-icons/bs";
 
 const Find = () => {
@@ -9,7 +10,7 @@ const Find = () => {
         <div>
             <div id="specialpage" className={styles.textmain}>
                 <div className={styles.icon}>
-                    <span><BsFillLightningChargeFill size={25}/></span>
+                    <span><IoSearch size={25}/></span>
                 </div>
                 <div className={styles.text1}>
                     Найдено по вашему запросу:

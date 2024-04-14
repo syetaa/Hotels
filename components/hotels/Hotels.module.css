@@ -3,8 +3,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    column-gap: 53px;
-    row-gap: 53px;
+    column-gap: 23px;
+    row-gap: 23px;
 }
 .card{
     width: 20vw;
