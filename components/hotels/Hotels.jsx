@@ -51,16 +51,22 @@ function RoomCard (id, city, hotel, price, capacity) {
     );
 }
 
-function Hotels (data) {
-    const rooms = data.map((room) => {
-        <RoomCard key={room.id} id={room.id} city={room.city} hotel={room.hotel} price={room.price} capacity={room.capacity}/>
-    })
+export function HotelsComponent (data) {
+    const { data: rooms } = data;   
+    console.log(typeof rooms);
+    const newRooms = rooms.map(room => <RoomCard
+            key={room.id}
+            id={room.id}
+            city={room.city}
+            hotel={room.hotel}
+            price={room.price}
+            capacity={room.capacity}
+        />
+    )
     return(
         <div>
-          { rooms }
+          { newRooms }
         </div>
         
     )
 }
-
-export {Hotels};

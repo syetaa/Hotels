@@ -3,7 +3,11 @@
     padding: 50px 70px 80px 100px;
     justify-content: space-between;
     column-gap: 50px;
+    flex-wrap: wrap;
     /* background: #F6F5F4; */
+}
+.find_comp{
+    display: block;
 }
 .form_search{
     width: 45vw;
