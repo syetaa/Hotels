@@ -8,9 +8,13 @@ export async function getHotels(city, min_price, max_price, capacity) {
         'capacity': capacity,
     };
 
-    const response = await fetch(url);
+    const response = await fetch(url, params);
     const data = await response.json();
+    console.log(typeof data);
     console.log(data);
+
+    console.log(Object.entries(data));
+
 
     if (data) {
         return data;

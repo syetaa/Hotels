@@ -6,21 +6,21 @@ import { FiHeart } from "react-icons/fi";
 import hotels_card2 from "@/public/hotels_card2.png"
 import hotels_card3 from "@/public/hotels_card3.png"
 
-function RoomCard (id, city, hotel, price, capacity) {
+function RoomCard ({room}) {
     
     return (
-        <div className={styles.card}>
+        <div key={room.id} className={styles.card}>
                     <div className={styles.img}>
                         <Image src={hotels_card2}/>
                     </div>
                     <div className={styles.card_info}>
                         <div className={styles.cont1}>
                             <div className={styles.text1}>
-                                {hotel}
+                                {room.hotel}
                             </div>
                             <div className={styles.text2}>
                                 <div className={styles.text2_1}>
-                                    {city}
+                                    {room.city}
                                 </div>
                                 <div className={styles.text2_2}>
                                     -
@@ -31,7 +31,7 @@ function RoomCard (id, city, hotel, price, capacity) {
                             </div>
                             <div className={styles.text3}>
                                 <div className={styles.text3_1}>
-                                    {price}
+                                    {room.price}
                                 </div>
                                 <div className={styles.text3_2}>
                                 8280 ₽ / ночь
@@ -52,20 +52,34 @@ function RoomCard (id, city, hotel, price, capacity) {
 }
 
 export function HotelsComponent (data) {
-    const { data: rooms } = data;   
-    console.log(typeof rooms);
-    const newRooms = rooms.map(room => <RoomCard
+    console.log(typeof data);
+    const roooms = [
+        {
+          "city": "Москва",
+          "hotel": "Элеон",
+          "price": 1000,
+          "capacity": 2,
+          "id": 1
+        },
+        {
+          "city": "Москва",
+          "hotel": "Элеон",
+          "price": 1200,
+          "capacity": 3,
+          "id": 2
+        }
+      ]
+    // const { data: rooms } = data;   
+    const newRooms = roooms.map(room => <RoomCard
             key={room.id}
-            id={room.id}
-            city={room.city}
-            hotel={room.hotel}
-            price={room.price}
-            capacity={room.capacity}
+            room={room}
         />
+        
     )
+    console.log(newRooms)
     return(
         <div>
-          { newRooms }
+          { roooms }
         </div>
         
     )
