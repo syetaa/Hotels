@@ -9,6 +9,9 @@ import {Hotels} from "@/components/hotels/Hotels";
 import {Popular} from "@/components/popular/Popular";
 import {Find} from "@/components/find/Find";
 import { getHotels } from "@/api/search";
+import { Popular_cards } from "@/components/popular_cards/Popular_cards";
+import { Popular_cards2 } from "@/components/popular_cards2/popular_cards2";
+import Carousel2 from "@/components/carousel2/Carousel2";
 
 
 export default function Home() {
@@ -27,8 +30,11 @@ export default function Home() {
                             {/* <Find/> */}
                             {/* <Hotels data={hotels}/> */}
                             <Special/>
-                            <Carousel/>
+                            <Carousel2/>
+                            {/* <Carousel/> */}
                             <Popular/>
+                            <Popular_cards/>
+                            {/* <Popular_cards2/> */}
                         </> : <SignInComponent/>
                     }
                 </div>

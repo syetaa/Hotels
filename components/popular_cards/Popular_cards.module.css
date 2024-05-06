@@ -1,0 +1,27 @@
+.textmain{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    padding: 45px 100px;
+}
+.cont1{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.cont2,.cont3{
+    display: flex;
+    justify-content: space-between;
+}
+.img1 img{
+    width: 40vw;
+    height: auto;
+}
+.img2 img{
+    width: 25vw;
+    height: auto;
+}
+/* .img img{
+    width: 100%;
+    height: auto;
+} */

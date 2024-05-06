@@ -1,0 +1,44 @@
+.cont{
+    padding: 45px 45px;
+}
+
+
+
+.card{
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    align-items: center;
+}
+.cont1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.cont2{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.cont1 img{
+    width: 100%;
+    height: auto;
+}
+.rating{
+    background: #212121;
+    border-radius: 0 0 5px 5px;
+    height: 22px;
+}
+
+.text1{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color2);
+}
+.text2{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color3);
+}

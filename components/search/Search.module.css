@@ -57,6 +57,9 @@
     background: #E4E4E4;     /* !!! */
     border-radius: 20px;
 }
+.find_comp{
+    width: 100%;
+}
 
 @media (max-width: 1145px) { 
     .textmain{
