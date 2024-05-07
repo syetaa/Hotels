@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 25px;
-    padding: 45px 100px;
+    padding: 35px 100px;
 }
 .cont1{
     display: flex;
@@ -25,3 +25,14 @@
     width: 100%;
     height: auto;
 } */
+
+.name{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color1);
+}
+.price{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color3);
+}

@@ -20,7 +20,7 @@ const Now_favorite = () => {
                     </div>
                 </div>
                 <div className={styles.cont3}>
-                    <button>Выбрать отель</button>
+                    <a>Выбрать отель</a>
                 </div>
             </div>
         </div>

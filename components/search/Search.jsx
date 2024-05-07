@@ -63,7 +63,7 @@ function Search () {
                 </div>
                 <div className={styles.find_comp}>
                     {console.log(typeof data)}
-                    <Find/>
+                    {/* <Find/> */}
                     <HotelsComponent data={hotels}/>
                 </div>
                

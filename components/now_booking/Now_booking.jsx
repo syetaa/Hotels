@@ -20,7 +20,7 @@ const Now_booking = () => {
                     </div>
                 </div>
                 <div className={styles.cont3}>
-                    <button>Выбрать отель</button>
+                    <a href="#searchpage">Выбрать отель</a>
                 </div>
             </div>
         </div>

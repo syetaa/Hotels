@@ -45,7 +45,12 @@ function Carousel2() {
                 <div className={styles.cont1}>
                     <Image src={card_img1}/>
                     <div className={styles.rating}>
-                        rating
+                        <div className={styles.rating_text1}>
+                            4.5
+                        </div>
+                        <div className={styles.rating_text2}>
+                            146 отзывов
+                        </div>
                     </div>
                 </div>
                 <div className={styles.cont2}>
@@ -60,6 +65,9 @@ function Carousel2() {
                             2-3 апреля
                         </div>
                         <div className={styles.text3_2}>
+                            -
+                        </div>
+                        <div className={styles.text3_2}>
                             2 зрослых
                         </div>
                     </div>
@@ -70,48 +78,119 @@ function Carousel2() {
             </div>
         </div>,
 
-       <div key={1} className={styles.item}>
+       <div key={2} className={styles.item}>
            <div className={styles.card}>
                <div className={styles.cont1}>
                    <Image src={card_img1} />
                    <div className={styles.rating}>
-                       rating
+                       <div className={styles.rating_text1}>
+                           4.5
+                       </div>
+                       <div className={styles.rating_text2}>
+                           146 отзывов
+                       </div>
                    </div>
                </div>
-               <div className="cont2">
-                   text
+               <div className={styles.cont2}>
+                   <div className={styles.text1}>
+                       Марити
+                   </div>
+                   <div className={styles.text2}>
+                       Анапа
+                   </div>
+                   <div className={styles.text3}>
+                       <div className={styles.text3_1}>
+                           2-3 апреля
+                       </div>
+                       <div className={styles.text3_2}>
+                           -
+                       </div>
+                       <div className={styles.text3_2}>
+                           2 зрослых
+                       </div>
+                   </div>
+                   <div className={styles.text4}>
+                       От 15000₽
+                   </div>
                </div>
            </div>
        </div>,
 
-       <div key={1} className={styles.item}>
+       <div key={3} className={styles.item}>
            <div className={styles.card}>
                <div className={styles.cont1}>
                    <Image src={card_img1} />
                    <div className={styles.rating}>
-                       rating
+                       <div className={styles.rating_text1}>
+                           4.5
+                       </div>
+                       <div className={styles.rating_text2}>
+                           146 отзывов
+                       </div>
                    </div>
                </div>
-               <div className="cont2">
-                   text
+               <div className={styles.cont2}>
+                   <div className={styles.text1}>
+                       Марити
+                   </div>
+                   <div className={styles.text2}>
+                       Анапа
+                   </div>
+                   <div className={styles.text3}>
+                       <div className={styles.text3_1}>
+                           2-3 апреля
+                       </div>
+                       <div className={styles.text3_2}>
+                           -
+                       </div>
+                       <div className={styles.text3_2}>
+                           2 зрослых
+                       </div>
+                   </div>
+                   <div className={styles.text4}>
+                       От 15000₽
+                   </div>
                </div>
            </div>
        </div>,
 
-       <div key={1} className={styles.item}>
+       <div key={4} className={styles.item}>
            <div className={styles.card}>
                <div className={styles.cont1}>
                    <Image src={card_img1} />
                    <div className={styles.rating}>
-                       rating
+                       <div className={styles.rating_text1}>
+                           4.5
+                       </div>
+                       <div className={styles.rating_text2}>
+                           146 отзывов
+                       </div>
                    </div>
                </div>
-               <div className="cont2">
-                   text
+               <div className={styles.cont2}>
+                   <div className={styles.text1}>
+                       Марити
+                   </div>
+                   <div className={styles.text2}>
+                       Анапа
+                   </div>
+                   <div className={styles.text3}>
+                       <div className={styles.text3_1}>
+                           2-3 апреля
+                       </div>
+                       <div className={styles.text3_2}>
+                           -
+                       </div>
+                       <div className={styles.text3_2}>
+                           2 зрослых
+                       </div>
+                   </div>
+                   <div className={styles.text4}>
+                       От 15000₽
+                   </div>
                </div>
            </div>
        </div>,
-
 
 
 
