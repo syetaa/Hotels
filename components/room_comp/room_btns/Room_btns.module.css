@@ -1,0 +1,19 @@
+.textmain{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+    padding: 8px;
+    background: #E4E4E4;
+    border-radius: 12px;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+.cont1,.cont2{
+    display: flex;
+}

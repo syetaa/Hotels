@@ -29,7 +29,7 @@ function Carousel2() {
 
     //Responsiveness 
   const responsive = {
-    400: { items: 1 },
+    400: { items: 2 },
     840: { items: 3 },
     1220: { items: 4 },
     1600: { items: 4 },

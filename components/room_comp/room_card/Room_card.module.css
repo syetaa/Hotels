@@ -1,0 +1,22 @@
+.textmain{
+    display: flex;
+    column-gap: 150px;
+    padding: 25px 0;
+}
+
+.imgs{
+    display: flex;
+    align-items: stretch;
+}
+.img_cont1 img{
+    border-radius: 24px 0 0 24px;
+}
+.img_cont2_1 img{
+    border-radius: 0 24px 0 0;
+}
+.img_cont2_2 img{
+    border-radius: 0 0 24px 0;
+}
+.img_cont2_1,.img_cont2_2{
+    display: flex;
+}

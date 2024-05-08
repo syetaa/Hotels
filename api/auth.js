@@ -6,7 +6,6 @@ export async function onSignIn(username, password) {
     formData.append('password', password);
 
     const request = new Request(url, {
-        mode: 'no-cors',
         method: 'POST',
         body: formData,
     });
