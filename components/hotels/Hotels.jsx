@@ -38,14 +38,14 @@ function RoomCard({room}) {
                                     8280 ₽ / ночь
                                 </div>
                             </div>
+                            
                         </div>
                         <div className={styles.cont2}>
-                            <div className={styles.score}>
-                                4.5
-                            </div>
-                            
                             <div className={styles.like}>
                                 <FiHeart size={20} />
+                            </div>
+                            <div className={styles.score}>
+                                Бронь
                             </div>
                         </div>
                     </div>
