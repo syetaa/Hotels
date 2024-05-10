@@ -3,6 +3,7 @@ import styles from "./Room_btns.module.css"
 import { IoIosArrowBack } from "react-icons/io";
 import { IoShareOutline } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
+import BackButton from "@/components/btns/BackButton";
 
 
 const Room_btns = () => {
@@ -12,7 +13,7 @@ const Room_btns = () => {
             <div id="room_btnspage" className={styles.textmain}>
                 <div className={styles.cont1}>
                     <div className={styles.btn}>
-                        <IoIosArrowBack size={20}/>К списку отелей
+                        <BackButton/>
                     </div> 
                 </div>
                 <div className={styles.cont2}>
