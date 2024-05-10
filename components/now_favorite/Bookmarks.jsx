@@ -65,30 +65,36 @@ export default function Bookmarks({token}) {
     return (
         <div>
             {bookmarks.length === 0 || bookmarks === false ?
-                <div id="nowbookingpage" className={styles.textmain}>
-                    <div className={styles.cont1}>
+                <div id="nowbookingpage" className={styles.textmain_now}>
+                    <div className={styles.cont1_now}>
                         <Image src={Now_booking_img}/>
                     </div>
-                    <div className={styles.cont2}>
-                        <div className={styles.text1}>
+                    <div className={styles.cont2_now}>
+                        <div className={styles.text1_now}>
                             Здесь пока ничего нет
                         </div>
-                        <div className={styles.text2}>
+                        <div className={styles.text2_now}>
                             Нажимайте на значок сердечка у понравившихся отелей, <br/>чтобы сохранить и просматривать их
                             в
                             этом разделе
                         </div>
                     </div>
-                    <div className={styles.cont3}>
-                        <button>Выбрать отель</button>
+                    <div className={styles.cont3_now}>
+                        <a href="#">Выбрать отель</a>
                     </div>
                 </div> :
                 <div className={styles.textmain}>
-                    {bookmarks.map(bookmark => (
-                    <div key={bookmark.id}>
-                        <BookmarkCard bookmark={bookmark}/>
+                    <div className={styles.text_fav}>
+                        Избранное:
                     </div>
-                ))}
+                    <div className={styles.card_fav}>
+                        {bookmarks.map(bookmark => (
+                            <div key={bookmark.id}>
+                                <BookmarkCard bookmark={bookmark} />
+                            </div>
+                        ))}
+                    </div>
+                    
                 </div>
                 }
         </div>

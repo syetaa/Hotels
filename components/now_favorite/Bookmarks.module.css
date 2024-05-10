@@ -1,8 +1,26 @@
 .textmain{
     display: flex;
-    column-gap: 45px;
+    flex-direction: column;
+    row-gap: 45px;
     padding: 50px 100px;
 }
+
+
+.text_fav{
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--text-color1);
+}
+.card_fav{
+    display: flex;
+    flex-direction: row;
+    column-gap: 45px;
+    row-gap: 45px;
+    flex-wrap: wrap;
+}
+
+
+
 .card{
     width: 20vw;
     min-width: 280px;
@@ -71,8 +89,7 @@
 .cont2{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 5px;
+    row-gap: 7px;
     align-items: center;
 }
 .like{
@@ -96,4 +113,44 @@
     font-size: 16px;
     font-weight: 500;
     color: #000000;
+}
+
+
+
+
+
+
+
+
+.textmain_now{
+    padding: 50px 110px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    color: #11100F;
+}
+.cont2_now{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.text1_now{
+    font-size: 22px;
+    font-weight: 700;
+}
+.text2_now{
+    font-size: 14px;
+    font-weight: 400;
+}
+.cont3_now{
+    margin-top: 22px;
+}
+.cont3_now > a{
+    border: none;
+    border-radius: 12px;
+    background: #7FE740;
+    padding: 18px 36px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #11100F;
 }
