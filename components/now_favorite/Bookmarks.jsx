@@ -83,11 +83,14 @@ export default function Bookmarks({token}) {
                         <button>Выбрать отель</button>
                     </div>
                 </div> :
-                bookmarks.map(bookmark => (
-                    <div key={bookmark.id} className={styles.textmain}>
+                <div className={styles.textmain}>
+                    {bookmarks.map(bookmark => (
+                    <div key={bookmark.id}>
                         <BookmarkCard bookmark={bookmark}/>
                     </div>
                 ))}
+                </div>
+                }
         </div>
     )
 }

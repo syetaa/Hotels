@@ -1,4 +1,6 @@
 .textmain{
+    display: flex;
+    column-gap: 45px;
     padding: 50px 100px;
 }
 .card{
