@@ -32,11 +32,8 @@ function BookmarkCard({bookmark}) {
                                 </div>
                             </div>
                             <div className={styles.text3}>
-                                <div className={styles.text3_1}>
-                                    {bookmark.price}
-                                </div>
                                 <div className={styles.text3_2}>
-                                    8280 ₽ / ночь
+                                    {bookmark.price} ₽ / ночь
                                 </div>
                             </div>
                             
