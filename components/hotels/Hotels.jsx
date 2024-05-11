@@ -12,7 +12,7 @@ function RoomCard({room}) {
             <div className={styles.card}>
                 <a href={`/rooms/${room.id}`}>
                     <div className={styles.img}>
-                        <Image src={hotels_card2} />
+                    <Image src={`/${room.id}.png`} alt="1" width={200} height={300} />
                     </div>
                     <div className={styles.card_info}>
                         <div className={styles.cont1}>

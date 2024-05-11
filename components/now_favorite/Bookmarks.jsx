@@ -11,9 +11,9 @@ import {useEffect, useState} from "react";
 function BookmarkCard({bookmark}) {
     return (
         <div className={styles.card}>
-                <a href={`/rooms/${bookmark.room_id}`}>
+                <a href={`/rooms/${bookmark.id}`}>
                     <div className={styles.img}>
-                    <Image src={`/${bookmark.room_id}.png`} alt="1" width={200} height={300} />
+                    <Image src={`/${bookmark.id}.png`} alt="1" width={200} height={300} />
                     </div>
                     <div className={styles.card_info}>
                         <div className={styles.cont1}>
