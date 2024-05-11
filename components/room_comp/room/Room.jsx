@@ -1,9 +1,27 @@
+'use client';
+
 import {getRoom} from "@/api/rooms";
 import Image from "next/image";
 import styles from "./Room.module.css"
 import {FiHeart} from "react-icons/fi";
+import {useEffect, useState} from "react";
+import {addBookmark, deleteBookmark} from "@/api/bookmarks";
+
+function handleClick (id, token, liked) {
+    liked ? deleteBookmark(id, token) : addBookmark(id, token);
+}
 
 function RoomComponent({roomData}) {
+    const [token, setToken] = useState('');
+    useEffect(() => {
+        setToken(localStorage.getItem("token"));
+    }, []);
+    const [liked, setLiked] = useState(false);
+    useEffect(() => {
+        setLiked(roomData.liked);
+    }, [roomData]);
+    console.log('token', token);
+    console.log('id', roomData.id);
     return (
         <div>
             <div className={styles.card}>
@@ -37,7 +55,10 @@ function RoomComponent({roomData}) {
                             4.5
                         </div>
                         <div className={styles.like}>
-                            <FiHeart size={20} />
+                            <FiHeart size={20} color={liked === true ? 'red' : 'black'} onClick={() => {
+                                handleClick(roomData.id, token, liked);
+                                setLiked(!liked)
+                            }}/>
                         </div>
                     </div>
                 </div> 
@@ -47,13 +68,19 @@ function RoomComponent({roomData}) {
     )
 }
 
-export default async function Room({params}) {
-   const roomData = await getRoom(params.id)
-    
-
+export default function Room({params}) {
+    const [token, setToken] = useState('');
+    useEffect(() => {
+        setToken(localStorage.getItem("token"));
+    }, []);
+    const [roomData, setRoomData] = useState([]);
+    useEffect(() => {
+        getRoom(params.id, token).then(res => setRoomData(res))
+    }, [token, params.id])
+    console.log(roomData)
     return (
         <div>
-            <RoomComponent roomData={roomData}/>
+            <RoomComponent roomData={roomData} />
         </div>
     )
 }

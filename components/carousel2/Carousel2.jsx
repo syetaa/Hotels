@@ -5,6 +5,9 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 import Image from "next/image";
 
 import card_img1 from "@/public/card_img1.png"
+import card_img2 from "@/public/card_img2.png"
+import card_img3 from "@/public/card_img3.png"
+import card_img4 from "@/public/card_img4.png"
 
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
@@ -81,7 +84,7 @@ function Carousel2() {
        <div key={2} className={styles.item}>
            <div className={styles.card}>
                <div className={styles.cont1}>
-                   <Image src={card_img1} />
+                   <Image src={card_img2} />
                    <div className={styles.rating}>
                        <div className={styles.rating_text1}>
                            4.5
@@ -119,7 +122,7 @@ function Carousel2() {
        <div key={3} className={styles.item}>
            <div className={styles.card}>
                <div className={styles.cont1}>
-                   <Image src={card_img1} />
+                   <Image src={card_img3} />
                    <div className={styles.rating}>
                        <div className={styles.rating_text1}>
                            4.5
@@ -157,7 +160,7 @@ function Carousel2() {
        <div key={4} className={styles.item}>
            <div className={styles.card}>
                <div className={styles.cont1}>
-                   <Image src={card_img1} />
+                   <Image src={card_img4} />
                    <div className={styles.rating}>
                        <div className={styles.rating_text1}>
                            4.5
