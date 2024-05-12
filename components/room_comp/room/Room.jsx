@@ -6,9 +6,14 @@ import styles from "./Room.module.css"
 import {FiHeart} from "react-icons/fi";
 import {useEffect, useState} from "react";
 import {addBookmark, deleteBookmark} from "@/api/bookmarks";
+import {addOrder, deleteOrder} from "@/api/orders";
 
-function handleClick (id, token, liked) {
+function handleLike (id, token, liked) {
     liked ? deleteBookmark(id, token) : addBookmark(id, token);
+}
+
+function handleOrder(id, token, ordered) {
+    ordered ? deleteOrder(id, token) : addOrder(id, token);
 }
 
 function RoomComponent({roomData}) {
@@ -20,8 +25,10 @@ function RoomComponent({roomData}) {
     useEffect(() => {
         setLiked(roomData.liked);
     }, [roomData]);
-    console.log('token', token);
-    console.log('id', roomData.id);
+    const [ordered, setOrdered] = useState(false);
+    useEffect(() => {
+        setOrdered(roomData.ordered);
+    }, [roomData]);
     return (
         <div>
             <div className={styles.card}>
@@ -51,20 +58,24 @@ function RoomComponent({roomData}) {
                         </div>
                     </div>
                     <div className={styles.cont2}>
-                        
+                        <div className={styles.score}>
+                            4.5
+                        </div>
                         <div className={styles.like}>
                             <FiHeart size={20} color={liked === true ? 'red' : 'black'} onClick={() => {
-                                handleClick(roomData.id, token, liked);
+                                handleLike(roomData.id, token, liked);
                                 setLiked(!liked)
                             }}/>
                         </div>
-                        <div className={styles.score}>
-                            Бронь
-                        </div>
+                        <button className={styles.score} onClick={() => {
+                            handleOrder(roomData.id, token, ordered);
+                            setOrdered(!ordered)
+                        }}>{ordered === true ? 'Забронировано' : 'Забронировать'}
+                        </button>
                     </div>
-                </div> 
+                </div>
             </div>
-            
+
         </div>
     )
 }

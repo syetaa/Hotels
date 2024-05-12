@@ -13,7 +13,6 @@ export default async function getBookmarks(token) {
         return false
     }
     const data = await response.json();
-    console.log(data);
 
     if (data) {
         return data;
@@ -33,13 +32,13 @@ export async function addBookmark(id, token) {
         }
     }
 
-    console.log(request)
+
     const response = await fetch(url, request);
     if (response.status === 401) {
         return false
     }
     const data = await response.json();
-    console.log(data);
+
 
     if (data) {
         return data;
@@ -61,8 +60,6 @@ export async function deleteBookmark(id, token) {
         return false
     }
     const data = await response.json();
-    console.log(data);
-
     if (data) {
         return data;
     }

@@ -2,13 +2,20 @@
 
 import styles from "./Bookmarks.module.css";
 import Image from "next/image";
-import hotels_card2 from "@/public/hotels_card2.png";
 import {FiHeart} from "react-icons/fi";
 import getBookmarks from "@/api/bookmarks";
 import Now_booking_img from "@/public/Now_booking_img.png";
 import {useEffect, useState} from "react";
 
 function BookmarkCard({bookmark}) {
+    const [liked, setLiked] = useState(false);
+    useEffect(() => {
+        setLiked(bookmark.liked);
+    }, [bookmark]);
+    const [ordered, setOrdered] = useState(false);
+    useEffect(() => {
+        setOrdered(bookmark.ordered);
+    }, [bookmark]);
     return (
         <div className={styles.card}>
                 <a href={`/rooms/${bookmark.id}`}>
@@ -40,10 +47,10 @@ function BookmarkCard({bookmark}) {
                         </div>
                         <div className={styles.cont2}>
                             <div className={styles.like}>
-                                <FiHeart size={20} />
+                                <FiHeart size={20} color={liked === true ? 'red' : 'black'}/>
                             </div>
                             <div className={styles.score}>
-                                Бронь
+                                {ordered === true ? 'Забронировано' : 'Забронировать'}
                             </div>
                         </div>
                     </div>
@@ -58,7 +65,6 @@ export default function Bookmarks({token}) {
     useEffect(() => {
         getBookmarks(token).then(res => setBookmarks(res))
     }, [token])
-    console.log(bookmarks[0]);
     return (
         <div>
             {bookmarks.length === 0 || bookmarks === false ?

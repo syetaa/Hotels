@@ -13,7 +13,6 @@ export async function getUserInfo(token) {
         return false
     }
     const data = await response.json();
-    console.log(data);
 
     if (data) {
         return data;

@@ -3,14 +3,16 @@ import styles from "./Search.module.css"
 import { BsCalendarDateFill } from "react-icons/bs";
 import { MdPlace } from "react-icons/md";
 import { IoPeopleSharp } from "react-icons/io5";
-import { useState } from "react";
+import {useEffect, useState} from "react";
 import { HotelsComponent } from "../hotels/Hotels";
-import { Find } from "../find/Find";
 import { getHotels } from "@/api/search";
 
 
 function Search () {
-    
+    const [token, setToken] = useState('');
+    useEffect(() => {
+        setToken(localStorage.getItem("token"));
+    }, []);
     const [city, setCity] = useState('Москва');
     const [minPrice, setMinPrice] = useState(1000);
     const [maxPrice, setMaxPrice] = useState(1500);
@@ -18,8 +20,8 @@ function Search () {
 
     const [hotels, setHotels] = useState([]);
 
-    async function onSetHotelsClick(city, minPrice, maxPrice, capacity){
-        setHotels(await getHotels(city, minPrice, maxPrice, capacity))
+    async function onSetHotelsClick(token, city, minPrice, maxPrice, capacity){
+        getHotels(token, city, minPrice, maxPrice, capacity).then(res => setHotels(res))
     }
 
     return(
@@ -51,11 +53,10 @@ function Search () {
                             <input onChange={(event) => {
                     setCapacity(event.target.value)}} value={capacity} type="text" placeholder="2 взрослых"/>
                         </div>
-                        <a href="#" onClick={() => onSetHotelsClick(city, minPrice, maxPrice, capacity)}>Найти</a>
+                        <a href="#" onClick={() => onSetHotelsClick(token, city, minPrice, maxPrice, capacity)}>Найти</a>
                     </div>
                 </div>
                 <div className={styles.find_comp}>
-                    {console.log(typeof data)}
                     {/* <Find/> */}
                     <HotelsComponent data={hotels}/>
                 </div>
