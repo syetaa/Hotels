@@ -51,14 +51,15 @@ function RoomComponent({roomData}) {
                         </div>
                     </div>
                     <div className={styles.cont2}>
-                        <div className={styles.score}>
-                            4.5
-                        </div>
+                        
                         <div className={styles.like}>
                             <FiHeart size={20} color={liked === true ? 'red' : 'black'} onClick={() => {
                                 handleClick(roomData.id, token, liked);
                                 setLiked(!liked)
                             }}/>
+                        </div>
+                        <div className={styles.score}>
+                            Бронь
                         </div>
                     </div>
                 </div> 

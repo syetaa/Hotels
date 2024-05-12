@@ -1,29 +1,16 @@
-import styles from "./Now_booking.module.css"
-import Image from "next/image";
+'use client';
 
-import Now_booking_img from "@/public/Now_booking_img.png"
+import {useEffect, useState} from "react";
+import Orders from "@/components/now_booking/Orders";
 
-const Now_booking = () => {
 
-    return(
-        <div>
-            <div id="nowbookingpage" className={styles.textmain}>
-                <div className={styles.cont1}>
-                    <Image src={Now_booking_img}/>
-                </div>
-                <div className={styles.cont2}>
-                    <div className={styles.text1}>
-                        Пора в путешествие!
-                    </div>
-                    <div className={styles.text2}>
-                        Предстоящих бронирований пока нет, завершённые брони<br/> можно посмотреть во вкладке «Прошлые»
-                    </div>
-                </div>
-                <div className={styles.cont3}>
-                    <a href="#searchpage">Выбрать отель</a>
-                </div>
-            </div>
-        </div>
+function Now_booking () {
+    const [token, setToken] = useState('');
+    useEffect(() => {
+        setToken(localStorage.getItem("token"));
+    }, []);
+    return (
+        <Orders token={token}/>
     )
 }
 
