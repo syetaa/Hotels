@@ -62,6 +62,7 @@
 }
 .text3{
     display: flex;
+    column-gap: 5px;
     align-items: center;
     font-weight: 500;
     color: var(--text-color2);

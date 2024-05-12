@@ -87,23 +87,23 @@ function Carousel2() {
                    <Image src={card_img2} />
                    <div className={styles.rating}>
                        <div className={styles.rating_text1}>
-                           4.5
+                           4.9
                        </div>
                        <div className={styles.rating_text2}>
-                           146 отзывов
+                           1456 отзывов
                        </div>
                    </div>
                </div>
                <div className={styles.cont2}>
                    <div className={styles.text1}>
-                       Марити
+                       Звезды Арбата
                    </div>
                    <div className={styles.text2}>
-                       Анапа
+                       Москва
                    </div>
                    <div className={styles.text3}>
                        <div className={styles.text3_1}>
-                           2-3 апреля
+                           15-17 мая
                        </div>
                        <div className={styles.text3_2}>
                            -
@@ -113,7 +113,7 @@ function Carousel2() {
                        </div>
                    </div>
                    <div className={styles.text4}>
-                       От 15000₽
+                       От 45000₽
                    </div>
                </div>
            </div>
@@ -134,10 +134,10 @@ function Carousel2() {
                </div>
                <div className={styles.cont2}>
                    <div className={styles.text1}>
-                       Марити
+                        Valo Mercure
                    </div>
                    <div className={styles.text2}>
-                       Анапа
+                       Санкт-Питербург
                    </div>
                    <div className={styles.text3}>
                        <div className={styles.text3_1}>
