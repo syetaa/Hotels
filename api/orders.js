@@ -1,5 +1,9 @@
+const protocol = process.env.BACKEND_PROTOCOL
+const host = process.env.BACKEND_HOST
+const port = process.env.BACKEND_PORT
+
 export default async function getOrders(token) {
-    const url = 'http://127.0.0.1:8000/orders/';
+    const url = `${protocol}://${host}:${port}/orders`;
 
     const request = {
         'method': 'GET',
@@ -24,7 +28,7 @@ export default async function getOrders(token) {
 }
 
 export async function addOrder(id, token) {
-    const url = `http://127.0.0.1:8000/orders/${id}`;
+    const url = `${protocol}://${host}:${port}/orders/${id}`;
 
     const request = {
         'method': 'POST',
@@ -46,7 +50,7 @@ export async function addOrder(id, token) {
 }
 
 export async function deleteOrder(id, token) {
-    const url = `http://127.0.0.1:8000/orders/${id}`;
+    const url = `${protocol}://${host}:${port}/orders/${id}`;
 
     const request = {
         'method': 'DELETE',

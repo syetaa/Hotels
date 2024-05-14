@@ -1,5 +1,9 @@
+const protocol = process.env.BACKEND_PROTOCOL
+const host = process.env.BACKEND_HOST
+const port = process.env.BACKEND_PORT
+
 export async function getUserInfo(token) {
-    const url = 'http://127.0.0.1:8000/users/';
+    const url = `${protocol}://${host}:${port}/users`;
 
     const request = {
         'method': 'GET',

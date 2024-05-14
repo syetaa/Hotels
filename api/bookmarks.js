@@ -1,5 +1,9 @@
+const protocol = process.env.BACKEND_PROTOCOL
+const host = process.env.BACKEND_HOST
+const port = process.env.BACKEND_PORT
+
 export default async function getBookmarks(token) {
-    const url = 'http://127.0.0.1:8000/bookmarks/';
+    const url = `${protocol}://${host}:${port}/bookmarks`;
 
     const request = {
         'method': 'GET',
@@ -23,7 +27,7 @@ export default async function getBookmarks(token) {
 }
 
 export async function addBookmark(id, token) {
-    const url = `http://127.0.0.1:8000/bookmarks/${id}`;
+    const url = `${protocol}://${host}:${port}/bookmarks/${id}`;
 
     const request = {
         'method': 'POST',
@@ -46,7 +50,7 @@ export async function addBookmark(id, token) {
 }
 
 export async function deleteBookmark(id, token) {
-    const url = `http://127.0.0.1:8000/bookmarks/${id}`;
+    const url = `${protocol}://${host}:${port}/bookmarks/${id}`;
 
     const request = {
         'method': 'DELETE',
