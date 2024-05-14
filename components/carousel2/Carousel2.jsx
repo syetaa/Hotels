@@ -141,7 +141,7 @@ function Carousel2() {
                    </div>
                    <div className={styles.text3}>
                        <div className={styles.text3_1}>
-                           2-3 апреля
+                           27-30 мая
                        </div>
                        <div className={styles.text3_2}>
                            -
@@ -151,7 +151,7 @@ function Carousel2() {
                        </div>
                    </div>
                    <div className={styles.text4}>
-                       От 15000₽
+                       От 12000₽
                    </div>
                </div>
            </div>
@@ -163,23 +163,23 @@ function Carousel2() {
                    <Image src={card_img4} />
                    <div className={styles.rating}>
                        <div className={styles.rating_text1}>
-                           4.5
+                           5.0
                        </div>
                        <div className={styles.rating_text2}>
-                           146 отзывов
+                           687 отзывов
                        </div>
                    </div>
                </div>
                <div className={styles.cont2}>
                    <div className={styles.text1}>
-                       Марити
+                    Palace Bridge
                    </div>
                    <div className={styles.text2}>
-                       Анапа
+                       Москва
                    </div>
                    <div className={styles.text3}>
                        <div className={styles.text3_1}>
-                           2-3 апреля
+                           13-15 мая
                        </div>
                        <div className={styles.text3_2}>
                            -
@@ -189,7 +189,7 @@ function Carousel2() {
                        </div>
                    </div>
                    <div className={styles.text4}>
-                       От 15000₽
+                       От 27000₽
                    </div>
                </div>
            </div>

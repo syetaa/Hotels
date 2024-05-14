@@ -1,5 +1,9 @@
+const protocol = process.env.BACKEND_PROTOCOL
+const host = process.env.BACKEND_HOST
+const port = process.env.BACKEND_PORT
+
 export async function getRoom(id, token) {
-    const url = `http://127.0.0.1:8000/rooms/${id}`;
+    const url = `${protocol}://${host}:${port}/rooms/${id}`;
     const request = {
         'method': 'GET',
         headers: {

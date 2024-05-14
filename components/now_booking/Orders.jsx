@@ -42,7 +42,7 @@ function OrderCard({order}) {
                             <FiHeart size={20} />
                         </div>
                         <div className={styles.score}>
-                            Бронь
+                            4.6
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ export default function Orders({token}) {
                 <div>
                     <div id="nowbookingpage" className={styles.textmain}>
                         <div className={styles.cont1}>
-                            <Image src={Now_booking_img}/>
+                            <Image src={Now_booking_img} alt="1"/>
                         </div>
                         <div className={styles.cont2}>
                             <div className={styles.text1}>

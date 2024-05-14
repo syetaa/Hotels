@@ -1,5 +1,9 @@
+const protocol = process.env.BACKEND_PROTOCOL
+const host = process.env.BACKEND_HOST
+const port = process.env.BACKEND_PORT
+
 export async function onSignIn(username, password) {
-    const url = 'http://127.0.0.1:8000/users/token';
+    const url = `${protocol}://${host}:${port}/users/token`;
 
     const formData = new FormData();
     formData.append('username', username);
