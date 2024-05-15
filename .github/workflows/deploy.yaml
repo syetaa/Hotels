@@ -22,4 +22,6 @@ jobs:
             cd ${{ secrets.PROJECT_FOLDER }}
             git checkout main
             git pull
+            yarn install
+            yarn build
             pm2 restart hotels_front

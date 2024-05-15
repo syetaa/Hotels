@@ -33,7 +33,7 @@ function RoomComponent({roomData}) {
         <div>
             <div className={styles.card}>
                 <div className={styles.img}>
-                    <Image src={`/${roomData.id}.png`} alt="1" width={200} height={300} />
+                    <Image src={`/${roomData.id}.png`} alt="1" quality={100} width={200} height={300} />
                 </div>
                 <div className={styles.room_info}>
                     <div className={styles.cont1}>
@@ -68,7 +68,7 @@ function RoomComponent({roomData}) {
                         <button className={styles.score} onClick={() => {
                             handleOrder(roomData.id, token, ordered);
                             setOrdered(!ordered)
-                        }}>{ordered === true ? 'Забронировано' : 'Забронировать'}
+                        }}>{ordered === true ? 'В Бронях' : 'Бронь'}
                         </button>
                     </div>
                 </div>

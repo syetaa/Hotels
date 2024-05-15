@@ -61,20 +61,20 @@ export default function Orders({token}) {
         <div>
             {orders.length === 0 || orders === false ?
                 <div>
-                    <div id="nowbookingpage" className={styles.textmain}>
-                        <div className={styles.cont1}>
+                    <div id="nowbookingpage" className={styles.textmain_nowfav}>
+                        <div className={styles.cont1_nowfav}>
                             <Image src={Now_booking_img} alt="1"/>
                         </div>
-                        <div className={styles.cont2}>
-                            <div className={styles.text1}>
+                        <div className={styles.cont2_nowfav}>
+                            <div className={styles.text1_nowfav}>
                                 Пора в путешествие!
                             </div>
-                            <div className={styles.text2}>
+                            <div className={styles.text2_nowfav}>
                                 Предстоящих бронирований пока нет, завершённые брони<br/> можно посмотреть во вкладке
                                 «Прошлые»
                             </div>
                         </div>
-                        <div className={styles.cont3}>
+                        <div className={styles.cont3_nowfav}>
                             <a href="#searchpage">Выбрать отель</a>
                         </div>
                     </div>

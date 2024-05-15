@@ -33,7 +33,7 @@ const ProfileCard = () => {
                                 <BsFillPersonFill size={65} color="#fff"/>
                             </div>
                             <div className={styles.text1}>
-                                {userInfo.name} {userInfo.surname}
+                                {userInfo.name}
                             </div>
                             <div className={styles.text2}>
                                 {userInfo.email}
