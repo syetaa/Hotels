@@ -3,7 +3,7 @@ const host = process.env.BACKEND_HOST
 const port = process.env.BACKEND_PORT
 
 export async function getHotels(token, city, min_price, max_price, capacity) {
-    const url = `${protocol}://${host}:${port}/rooms/?city=${city}&min_price=${min_price}&max_price=${max_price}&capacity=${capacity}`;
+    const url = `${protocol}://${host}:${port}/rooms?city=${city}&min_price=${min_price}&max_price=${max_price}&capacity=${capacity}`;
 
     const request = {
         method: 'GET',
