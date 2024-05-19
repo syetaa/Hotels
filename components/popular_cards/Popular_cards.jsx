@@ -92,7 +92,7 @@ const Popular_cards = () => {
 
 
                 <div className={styles.cont3}>
-                <div className={styles.cont1_1}>
+                    <div className={styles.cont1_1}>
                         <div className={styles.img2}>
                             <Image src={vladiv_img}/>
                         </div>

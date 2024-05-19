@@ -73,6 +73,7 @@
 }
 
 .prev_btn,.next_btn{
+    margin-top: 25px;
     padding: 8px 8px;
     background: var(--primary-color);
     border-radius: 100%;

@@ -36,10 +36,10 @@ body{
   height: 100%;
   
 }
-.header{
+/* .header{
   flex: 0 0 auto;
 
-}
+} */
 main{
   flex: 1 0 auto;
   background: #F6F5F4;

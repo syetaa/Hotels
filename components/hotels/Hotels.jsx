@@ -70,7 +70,7 @@ function RoomCard({room}) {
                     <button className={styles.score} onClick={() => {
                         handleOrder(room.id, token, ordered);
                         setOrdered(!ordered)
-                    }}>{ordered === true ? 'Забронировано' : 'Забронировать'}
+                    }}>{ordered === true ? 'В Бронях' : 'Бронь'}
                     </button>
                 </div>
             </div>

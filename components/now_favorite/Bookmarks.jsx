@@ -50,7 +50,7 @@ function BookmarkCard({bookmark}) {
                                 <FiHeart size={20} color={liked === true ? 'red' : 'black'}/>
                             </div>
                             <div className={styles.score}>
-                                {ordered === true ? 'Забронировано' : 'Забронировать'}
+                                {ordered === true ? 'В "Бронях"' : 'Бронь'}
                             </div>
                         </div>
                     </div>
