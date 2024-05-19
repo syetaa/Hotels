@@ -24,17 +24,24 @@
     flex-direction: column;
     row-gap: 30px;
 }
-.cont2 input{
+.inp1 input{
     background: #fff;
     display: flex;
     width: 60%;
-    border-bottom: 1px solid #000;
+
     padding: 5px;
 }
-.cont2 input::placeholder{
-    font-size: 16px;
+.inp1 input::placeholder{
+    font-size: 18px;
     font-weight: 500;
-    color: var(--text-color3);
+    color: #2e2e2e;
+}
+.inp1{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+    border-bottom: 1px solid #000;
 }
 .btn{
     width: 30%;
