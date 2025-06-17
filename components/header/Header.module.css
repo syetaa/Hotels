@@ -28,3 +28,18 @@
     transform: scale(1.05);
     color: var(--link-hover-color);
 }
+
+@media (max-width: 615px) {
+    .textmain{
+        padding: 0;
+        margin: 0;
+    }
+    .links{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    }
+    .logo{
+        display: none;
+    }
+}

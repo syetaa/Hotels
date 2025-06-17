@@ -10,7 +10,7 @@ const Footer = () => {
         <div>
             <div id="footerpage" className={styles.textmain}>
                 <div className={styles.cont1}>
-                    © 2024
+                    © 2025
                 </div>
                 <div className={styles.cont2}>
                     <div className={styles.text1}>
